@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ritosumario-rs:
+    image: openjdk:11
+    volumes:
+      - /home/papercut/Documentos/projects/embraer/ritosumario/ritosumario-rs/:/app/ritosumario-rs/
+    network_mode: host
+    stdin_open: true
+    tty: true
+

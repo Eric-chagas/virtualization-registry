@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  app:
+    image: node:14.17
+    restart: always
+    network_mode: host
+    volumes:
+      - /home/papercut/Documentos/projects/embraer/ritosumario:/app/ritosumario
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/ritosumario/dskey-prod.json
+    tty: true
+    stdin_open: true

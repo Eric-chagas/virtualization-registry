@@ -1,0 +1,11 @@
+version: '3'
+services:
+  java:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /path/in/host:/home/project_repo/
+    network_mode: host
+    stdin_open: true
+    tty: true

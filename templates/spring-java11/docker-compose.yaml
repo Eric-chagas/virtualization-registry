@@ -1,0 +1,10 @@
+version: '3'
+services:
+  wave-user:
+    image: openjdk:11
+    volumes:
+      - /home/papercut/Documentos/projects/embraer/wave/wave-user/:/mnt/wave-user/
+    network_mode: host
+    stdin_open: true
+    tty: true
+

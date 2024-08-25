@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  spacevim:
+    image: spacevim/spacevim
+    command: nvim
+    volumes:
+      - /home/papercut/SpaceVim:/home/spacevim
+    tty: true
+    stdin_open: true
